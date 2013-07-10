@@ -1,0 +1,14 @@
+﻿*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*.bak
+*.orig
+*.swm
+*.swn
+*.swo
+*.swp
+*~
+._*
+_*/
+.idea/

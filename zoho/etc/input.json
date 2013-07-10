@@ -1,0 +1,31 @@
+{
+"title" : "Zoho - Watir, Ruby Exercise",
+"main_url" : "http://crm.zoho.com/crm/login.sas",
+"login_page" : 
+		{
+			"username" : "dima@voin.us",
+			"password" : "Ci8ili3a&ion"
+		},
+"account_page":
+    
+		{
+            "account_name" : "Test Account #01",
+			"phone" : "415-236-0046",
+			"parent account" : "Parent Account",
+			"account_type" : "Analyst",
+			"industry" : "ASP",
+			"billing_street" : "101 Main St.",
+			"billing_city" : "San Francisco",
+			"billing_state" : "CA",
+			"billing_code" : "94102",
+			"billing_country" : "USA",
+			"shipping_street" : "101 Main St.",
+			"shipping_city" : "San Francisco",
+			"shipping_state" : "CA",
+			"shipping_code" : "94102",
+			"shipping_country" : "USA",
+			"description" : "This is a test description"
+        },
+		
+"blank_account_alert" : "Account Name cannot be empty"		
+}

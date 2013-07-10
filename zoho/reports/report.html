@@ -1,0 +1,175 @@
+        <html>
+          <style>
+            body {background-color: #FFFFF0; font-family: "VAG Round" ; color : #000080;font-weight:normal;word-break: break-all;}
+            #specifications{font-family:Arial,Helvetica,Sans-serif;font-size:13px;width:480px;background:#fff;border-collapse:collapse;text-align:left;margin:20px;border:1px solid #ccc;}
+            #specifications th{font-size:14px;font-weight:bold;color:#039;border-bottom:2px solid #6678b1;padding:10px 8px;}
+            #specifications td{border-bottom:1px solid #ccc;color:#009;padding:6px 8px;}
+            #statuspass{font-family:Arial,Helvetica,Sans-serif;font-size:12px;color:green;font-weight:bold;}
+            #statusfail{font-family:Arial,Helvetica,Sans-serif;font-size:12px;color:red;font-weight:bold;}
+            #tcs{font-family:Arial,Helvetica,Sans-serif;font-size:13px;background:#fff;width:900px;border-collapse:collapse;text-align:left;margin:20px;border:1px solid #ccc;}
+            #tcs th{font-size:14px;font-weight:bold;color:#039;border-bottom:2px solid #6678b1;padding:10px 8px;}
+            #tcs td{border-bottom:1px solid #ccc;color:#009;padding:6px 8px;}
+            #checkpoint{font-family:Arial,Helvetica,Sans-serif;font-size:13px;background:#fff;width:900px;border-collapse:collapse;text-align:left;margin:20px;border:1px solid #ccc;}
+            #checkpoint td{border-bottom:1px solid #ccc;color:#009;padding:6px 8px;}
+            #container{margin: 0 30px;background: #fff;border:1px solid #ccc;}
+            #header{background: #e8edff;padding: 2px;border-bottom: 2px solid #6678b1;}
+            #steps{background: #e8edff;font-weight: bold;}
+            #dp{font-weight: bold;}
+            #validations{font-weight: bold;}
+            #content{clear: left;padding: 10px;}
+            #footer{background: #e8edff;text-align: right;padding: 10px;}
+          </style>
+        <head><title>Zoho - Watir, Ruby Exercise</title></head>
+        <body>
+        <center>
+    <h1><u>Zoho - Watir, Ruby Exercise</u></h1><br/>
+        <h4>Test summary:</h4>
+        <table id="specifications" width="900px">
+          <tr><td>Test started On: 2013-07-09 00:04:01 -0700</td></tr>
+          <tr><td>Duration: 88.0 secs</td></tr>
+          <tr><td>Items tested: 44</td></tr>
+          <tr><td>Test status: <font id=statuspass>PASS</font></td></tr>
+        </table>
+
+          <h4>Test results:</h4>
+          <table id="tcs">
+            <tr>
+            <th >#</th>
+            <th >URL</th>
+            <th >Action</th>
+            <th >Result</th>
+            </tr>
+            <tr>
+            <td>1</td><td>https://www.zoho.com/crm/</td><td>Element verification: Link 'Sign In'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>2</td><td>https://www.zoho.com/crm/lp/login.html</td><td>Action: Login verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>3</td><td>https://accounts.zoho.com/login</td><td>Element verification: Button 'Sign In'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>4</td><td>https://accounts.zoho.com/login</td><td>Element verification: Link 'Accounts'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>5</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Button 'New Account'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>6</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Action: Account creation</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>7</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Image ''</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>8</td><td>https://crm.zoho.com/crm/Search.do</td><td>Element verification: Link 'Parent Account'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>9</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Button 'Save'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>10</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Link 'Accounts'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>11</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Link 'Test Account #01'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>12</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Action: Account Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>13</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Account Name' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>14</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Phone' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>15</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Parent Account' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>16</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Account Type' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>17</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Industry' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>18</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Billing Street' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>19</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Billing City' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>20</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Billing State' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>21</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Billing Code' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>22</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Billing Country' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>23</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Shipping Street' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>24</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Shipping City' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>25</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Shipping State' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>26</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Shipping Code' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>27</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Shipping Country' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>28</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Field 'Description' Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>29</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Link 'Accounts'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>30</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Button 'New Account'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>31</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Action: Blank Account creation</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>32</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Button 'Save'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>33</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Alert Verification</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>34</td><td>https://crm.zoho.com/crm/ShowHomePage.do</td><td>Element verification: Link 'Setup'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>35</td><td>https://crm.zoho.com/crm/Customize.do</td><td>Element verification: Button 'Data Administration'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>36</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Link 'Export Data'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>37</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Action: Export Accounts</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>38</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Button 'Export'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>39</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Link 'Migrate from other CRM'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>40</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Button 'Next'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>41</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Action: Import Accounts</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>42</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Button 'Next'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>43</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Button 'Next'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+            <tr>
+            <td>44</td><td>https://crm.zoho.com/crm/setupInner.do</td><td>Element verification: Button 'Import'</td><td><font id=statuspass>PASS</font></td>
+            </tr>
+          </body>
+          </html>
